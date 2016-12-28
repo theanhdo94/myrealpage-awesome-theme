@@ -40,11 +40,11 @@ Here is my current fonts that I'm using:
 ### Responsiveness Break Points
 *(You can see it on the top of the scss. You better search for it inside your Editor)*
 
-$large-desktop: 1920px;
-$medium-desktop: 1400px;
-$small-desktop: 1199px;
-$tabletL: 1023px;
-$tabletP: 768px;
-$small-tablet: 991px;
-$mobileL: 767px;
-$mobileP: 479px;
+- $large-desktop: 1920px;
+- $medium-desktop: 1400px;
+- $small-desktop: 1199px;
+- $tabletL: 1023px;
+- $tabletP: 768px;
+- $small-tablet: 991px;
+- $mobileL: 767px;
+- $mobileP: 479px;
