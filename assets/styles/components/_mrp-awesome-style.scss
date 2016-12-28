@@ -1,0 +1,262 @@
+/******
+  * MRP AWESOME STYLES;
+  * Author: Ro - Viet Artisans Frontend Master;
+  * MRP Version: 9.x;
+  *****/
+/** FONTS INIT **/
+@font-face{font-family: 'Prox';src: url('../fonts/ProximaNova300.otf');font-weight: 300;font-style: normal;}
+@font-face{font-family: 'Prox';src: url('../fonts/ProximaNova100.otf');font-weight: 100;font-style: normal;}
+@font-face{font-family: 'ProxAlt';src: url('../fonts/ProximaNovaAlt100.otf');font-weight: 100;font-style: normal;}
+@font-face{font-family: 'ProxAlt';src: url('../fonts/ProximaNovaAlt300.otf');font-weight: 300;font-style: normal;}
+@font-face{font-family: 'ProxAlt';src: url('../fonts/ProximaNovaAlt300i.otf');font-weight: 300;font-style: italic;}
+@font-face{font-family: 'ProxAlt';src: url('../fonts/ProximaNovaAlt600.otf');font-weight: 600;font-style: normal;}
+@font-face{font-family: 'ProxAlt';src: url('../fonts/ProximaNovaAlt700.otf');font-weight: 700;font-style: normal;}
+@font-face{font-family: 'ProxAltCond';src: url('../fonts/ProximaNovaAltCondensed700.otf');font-weight: 700;font-style: normal;}
+@font-face{font-family: 'ProxAltCond';src: url('../fonts/ProximaNovaAltCondensed600.otf');font-weight: 600;font-style: normal;}
+@font-face{font-family: 'ProxAltCond';src: url('../fonts/ProximaNovaAltCondensed400.otf');font-weight: 400;font-style: normal;}
+@font-face{font-family: 'ProxAltCond';src: url('../fonts/ProximaNovaAltCondensed300.otf');font-weight: 300;font-style: normal;}
+@font-face{font-family: 'ProxAltCond';src: url('../fonts/ProximaNovaAltCondensed100.otf');font-weight: 100;font-style: normal;}
+/*==============*/
+/** GLOBAL VARIABLES **/
+$golden-icon: #E5D64F;
+$golden-light: #ffb300;
+$golden-dark: #d47c00;
+$red-dark: #CC0000;
+$blue-dark: #00578c;
+$blue-light: #0277bd;
+$Prox: "Prox", Open Sans, Roboto, Arial;
+$ProxAlt: "ProxAlt", Open Sans, Roboto, Arial;
+$ProxAltCond: "ProxAltCond", Open Sans, Roboto, Arial;
+/*==============*/
+/** LISTING VIEW **/
+#listing-results-view{
+  &.mrp-listing-content{
+    a{color: $golden-dark;}
+    *{font-family: $ProxAlt;}
+    .mrp-results-page-summary{
+      select{border: 1px solid #CCC;padding: 4px;}
+    }
+    .listing-results-navigation-bottom{
+      margin-top: 0 !important;
+      .mrp-listing-page-navigation{
+        .page-buttons{
+          .small-number, .small-number:before{
+            font-family: $ProxAltCond;
+          }
+          .next-page-link, .previous-page-link{
+            border: 1px solid #DDD;
+            box-shadow: none;
+            border-bottom: 3px solid #CCC;
+            padding: 5px 20px;
+            line-height: 100%;
+          }
+        }
+      }
+    }    
+    .mrp-listing-results{
+      @media(min-width: $tabletP){margin: 0 -20px;}
+      .mrp-listing-result{
+        .mrp-sold-ad{
+          transform: translate(5px, -35%);
+          opacity: 1;
+          background-color: #CC0000;
+          color: #FFF;
+          font-family: $ProxAltCond;
+          letter-spacing: 1px;
+          width: calc(100% - 10px);
+        }
+        .mrp-listing-details-link a, .mrp-listing-links-section a{
+          font-family: $ProxAltCond;
+          transition: all 0.2s ease;
+          -webkit-transition: all 0.2s ease;
+          position: relative;
+          top: 0;
+          padding: 9px 30px;
+          box-shadow: none;
+          border-radius: 2px;
+          line-height: 100%;
+          font-size: 14px;
+          font-weight: 300;
+          letter-spacing: 1px;
+          &:hover{top: 3px;}
+        } 
+        .mrp-listing-details-link{
+          a{
+            background-color: $golden-light;
+            border-bottom: 3px solid $golden-dark;
+            text-shadow: 1px 1px 1px $golden-dark;
+            color: #FFF;
+            &:before{display: none;}
+            &:hover{box-shadow: 0 0 7px -2px #d47c00 inset;border-bottom: none;}
+          }
+        }
+        .mrp-listing-links-section{
+          a{
+            border: 1px solid #DDD;
+            border-bottom: 3px solid #CCC;
+            color: #333;
+            &:hover{box-shadow: 0 0 7px -2px #DDD inset;border-bottom: 1px solid #CCC;}
+          }
+          
+        }
+        .listing-contact-info{
+          .listing-contact-info-wrapper{font-size: 14px;}
+        }
+        .listing-description{
+          &.on{
+            background-color: rgba(212,124,0,0.94);
+            opacity: 1;
+            text-shadow: 1px 1px 0 $golden-dark;
+            box-shadow: 0 0 12px -4px #000;
+            
+            .inner{font-size: 16px;font-weight: 300;}
+          }
+        }
+        .mrp-listing-description{
+          font-size: 13px;
+        }
+        .summary-property-type{
+          opacity: 1;
+          background-color: rgba(2,119,189,0.9);
+          @media(min-width: $tabletP){font-size: 14px;}
+          box-shadow: 0 0 12px -5px #000;
+          text-shadow: 1px 1px 0px $blue-dark;
+          margin-left: 5px;
+        }
+        .mrp-listing-price-container{
+          opacity: 1;
+          background-color: rgba(255,51,51,0.9);
+          box-shadow: 0 0 12px -5px #000;
+          text-shadow: 1px 1px 0px $red-dark;
+          line-height: 100%;
+          padding: 6px 5px;
+          margin-right: 5px;
+          font-family: $ProxAltCond;
+          font-weight: 100;
+        }
+        .mrp-listing-summary-section{
+          .summary-status dt{font-size: 14px;}
+          dt{
+            font-weight: 600;font-family: $ProxAltCond;
+            &:after{
+              @media(min-width: $tabletP){font-size: 14px;}
+            }
+          }
+          dd{
+            @media(min-width: $tabletP){font-size: 14px;}
+            
+          }
+        }
+        .mrp-listing-main-image-container{
+          padding: 0;
+          box-shadow: 0 0 10px -5px #000;
+          border: 5px solid #CCC;
+        }
+        h3, .listing-item-entry-title{
+          font-family: $ProxAltCond;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+/** DETAILS VIEW **/
+#listing-details-view{
+  &.listing-details-view{
+    .mrp-details-listing-container{
+      // Content Layout
+      .mid-content{max-width: 100% !important;}
+      // Set Fonts Overview
+      a{color: $golden-dark;}
+      .mrp-listing-details-tab-content{
+        *{font-family: $ProxAlt;font-weight: 300;font-size: 16px;}
+      }
+      h1, h2, h3, h4, h5, h6{font-family: $ProxAltCond !important;font-weight: 600;}
+      h1.mrp-listing-title{
+        font-size: 30px !important;
+        .sub-location{
+          *{font-family: $ProxAlt;font-weight: 300;font-size: 16px !important;}
+        }
+      }
+      h2.mrp-listing-price-info{
+        font-size: 30px !important;
+        .sub-info{
+          *{
+            font-family: $ProxAlt;font-weight: 300;font-size: 16px !important;
+            &>.highlight{font-weight: 300;color: $golden-dark;}
+          }
+        }
+      }
+      
+      // Tabs
+      .mrp-listing-details-tabs{
+        float: left;position: relative;z-index: 999;margin-top: 0;border-bottom: none;
+        li{
+          &.active, &:hover{
+            border-bottom: 1px solid $golden-dark;
+            background-color: $golden-light;
+            a{color: #FFF;text-shadow: 1px 1px 0 $golden-dark;}
+          }
+          a{
+            text-shadow: none;
+            font-family: "Prox", Open Sans, Roboto, Arial;
+            font-weight: 600;
+            font-size: 16px;
+            color: #000;
+            padding: 15px;
+            line-height: 100%;
+          }
+        }
+      }
+      .mrp-listing-details-tab-content{
+        clear: both;
+        border-top: 1px solid #EEE;
+        .mrp-listing-photo-other{margin: 0;}
+        .post-image-wrapper{max-width: 100%;}
+      }
+      .mrp-listing-quick-actions{
+        &>span{
+          background-color: $golden-light;
+          border-bottom: 3px solid $golden-dark;
+          position: relative;
+          transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+          text-shadow: 1px 1px 0 $golden-dark;
+          &:hover{border-color: transparent;top: 3px;}
+        }
+      }
+      // Sidebar
+      .mrp-listing-links-section{
+        ul{
+          li{
+            background-color: $golden-light;
+            border-bottom: 3px solid $golden-dark;
+            position: relative;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            border-radius: 3px;
+            letter-spacing: 1px;
+            box-shadow: none;
+            &:hover{border-color: transparent;top: 3px;}
+            a{
+              font-family: $ProxAltCond !important;
+              text-shadow: 1px 1px 0 $golden-dark;
+              &:before{line-height: 100%;}
+            }
+          }
+        }
+      }
+      .mrp-listing-info-container{
+        .mrp-i-unit{color: $golden-dark;border-color: $golden-dark;border-bottom-width: 1px;}
+      }
+      .mrp-owner-contact-container{display: none;}
+      .post-image-sidebar{
+        .mrp-owner-contact-container{display: block;}
+      }
+    } // .mrp-details-listing-container
+  } // .listing-details-view
+} // #listing-details-view
