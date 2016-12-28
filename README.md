@@ -9,10 +9,10 @@ Awesome css stylesheet for MyRealPage plugin using SASS.
 ## SASS Files Structure:
 - assets/
   - fonts/
-    -- `font's files`
+    - `font's files`
   - styles/
     - components/
-      -- `mrp-awesome-theme.scss`
+      - `mrp-awesome-theme.scss`
 
 ## Stylesheet Structure:
 *Here are some variables that you can customize to your own.*
